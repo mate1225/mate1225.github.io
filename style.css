@@ -160,7 +160,7 @@ a:active {
     text-decoration: none;
 }
 
-@media (max-width:450px){
+@media (max-width:550px){
     .homePageTitle{
     font-size: 7vw;
 
@@ -172,7 +172,7 @@ a:active {
     margin-top: 5vw;
         
     width: 90vw;
-    height: 10vw;
+    height: 20vw;
     }
     .googleImage{
         width: 28vw;
@@ -181,12 +181,31 @@ a:active {
     margin-top: 3vw;
       
     width:80vw;
-    height:50vw;
-
-    gap: 5vw;
-
+    height:30vw;
     
+    gap: 5vw;
     }
+   /*image sizes*/
+   .youtubeImage{
+    width: 20vw;
+    }
+    .facebookImage{
+    width: 20vw;
+    }
+    .facebookMassngerImage{
+        width: 21vw;
+    }
+    .googleDriveImage{
+    width: 22vw;
+    }
+    .googleTranslaterImage{
+    width: 21vw;
+    }
+    .gmailImage{
+        width: 21vw;
+    }
+    
+    
     .middleImageParent{
         width: 30vw;
         height: 30vw;
@@ -196,10 +215,12 @@ a:active {
     margin-top: -2vw;
 
     width: 40vw;
-    height: 20vw;
+    height: 30vw;
     }
     h2{
     font-size:7vw;
     font-weight:700;
     }
+
+ 
 }
