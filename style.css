@@ -1,12 +1,14 @@
 /*setting*/
-*{
-    margin: 0;
-    padding: 0;
 
-    font-size: 16px;
-    font-weight: 700;
-    color:white ;
-    list-style:none;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+font-size: 16px;
+font-weight: 700;
+color:white ;
+list-style:none;
 }
 body{
     background-image: url(image/landing_page_backround.jpg);
@@ -70,6 +72,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
+
         
 gap:5vw;
 }
@@ -84,6 +87,7 @@ height: 8vw;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .middleImageParent:hover{
     background: #d60606;
@@ -154,4 +158,48 @@ a:hover {
 }
 a:active {
     text-decoration: none;
+}
+
+@media (max-width:450px){
+    .homePageTitle{
+    font-size: 7vw;
+
+    margin-top:3vw; 
+    margin-bottom: -1vw;
+    }
+
+    .googleParent{
+    margin-top: 5vw;
+        
+    width: 90vw;
+    height: 10vw;
+    }
+    .googleImage{
+        width: 28vw;
+    }
+    .midleElementParent{
+    margin-top: 3vw;
+      
+    width:80vw;
+    height:50vw;
+
+    gap: 5vw;
+
+    
+    }
+    .middleImageParent{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 20px;
+    }
+    .bottomH2Parent{
+    margin-top: -2vw;
+
+    width: 40vw;
+    height: 20vw;
+    }
+    h2{
+    font-size:7vw;
+    font-weight:700;
+    }
 }
