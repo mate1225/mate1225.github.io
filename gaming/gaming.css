@@ -1,10 +1,10 @@
 
 body{
-    background-image: url(images/valorant_3.PNG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+background-image: url(images/valorant_3.PNG);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .centering{
 display: flex;
@@ -76,11 +76,11 @@ width: 6vw;
 }
 @media(max-width:550px) {
     h1{
-        font-size: 15vw; 
+        font-size: 13vw; 
         margin-top:1vw; 
     }
     .flexContainer{
-    margin-top: 55vw;
+    margin-top: 53vw;
     gap: 3vw;
     }
     .f_items{
