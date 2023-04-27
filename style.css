@@ -174,7 +174,7 @@ a:active {
     margin-left: 10vw;
     margin-right: 10vw;
                 
-    width:80vw;
+    width:90vw;
     height:65vw;
                 
     display: flex;
@@ -192,8 +192,8 @@ a:active {
     background:linear-gradient(black,#545353,#d60606);
     border-radius: 3vw;
         
-    width: 30vw;
-    height: 20vw;
+    width: 40vw;
+    height: 25vw;
         
     display: flex;
     justify-content: center;
@@ -212,26 +212,26 @@ a:active {
     
    /*image sizes*/
    .youtubeImage{
-    width: 27vw;
+    width: 37vw;
     }
     .facebookImage{
-    width: 13vw;
+    width: 22vw;
     }
     .facebookMassngerImage{
-        width: 13vw;
+        width: 22vw;
     }
     .googleDriveImage{
-    width: 15vw;
+    width: 25vw;
     }
     .googleTranslaterImage{
-    width: 13vw;
+    width: 22vw;
     }
     .gmailImage{
-        width: 15vw;
+        width: 27vw;
     }
     
     .bottomH2Parent{
-    margin-top: -13vw;
+    margin-top: 10vw;
 
     width: 40vw;
     height: 25vw;
