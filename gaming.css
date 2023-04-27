@@ -1,0 +1,105 @@
+
+body{
+    background-image: url(images/valorant_3.PNG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centering{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+font-size: 7vw;
+color: white;
+opacity: 0.7;
+    
+margin-top:1vw; 
+    
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.flexContainer{
+margin-top: 23vw;
+margin-left: 2vw;
+margin-right: 2vw;
+
+width: 100vw;
+height: 10vw;
+    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 2vw;
+
+cursor: pointer;
+}
+    
+.f_items{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+width: 50vw;
+height: 30vw;
+
+border: 3px solid black;
+border-radius: 20px;
+background:linear-gradient(black,#545353,#0ea135);
+
+width: 15vw;
+height: 7vw;
+}
+.f_items:hover{
+background: #0ea135;
+}
+#valorant{
+width: 6vw;
+}
+#the_vr{
+width: 6vw;
+}
+#leet{
+width: 12vw;
+}
+#war_thunder{
+width:8vw;
+}
+#steam{
+width: 6vw;
+}
+@media(max-width:550px) {
+    h1{
+        font-size: 15vw; 
+        margin-top:1vw; 
+    }
+    .flexContainer{
+    margin-top: 55vw;
+    gap: 3vw;
+    }
+    .f_items{
+    width: 40vw;
+    height: 20vw;
+    }
+    #valorant{
+    width: 19vw;
+    }
+    #the_vr{
+    width: 19vw;
+    }
+    #leet{
+    width: 35vw;
+    }
+    #war_thunder{
+    width:23vw;
+    }
+    #steam{
+    width: 19vw;
+    }
+}
