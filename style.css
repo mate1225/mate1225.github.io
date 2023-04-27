@@ -58,9 +58,9 @@ align-items: center;
     background: #696868;
 }
 .googleImage{
-width: 7vw;
+width: 10vw;
 }
-.midleElementParent{
+.middleElementParent1{
 margin-top: 3vw;
 margin-left: 10vw;
 margin-right: 10vw;
@@ -72,24 +72,26 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
+flex-wrap: wrap;
 
-        
+
+
 gap:5vw;
 }
-.middleImageParent{
+.middleImageParent2{
 border: 2px solid black;
 background:linear-gradient(black,#545353,#d60606);
 border-radius: 1vw;
 
-width: 20vw;
-height: 8vw;
+width: 15vw;
+height: 7vw;
 
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
-.middleImageParent:hover{
+.middleImageParent2:hover{
     background: #d60606;
 }
 /*image sizes*/
@@ -118,7 +120,7 @@ h2{
    
 }
 .botomItemsCentering{
-    margin-top: 4vw;
+    margin-top: 16vw;
     
     display: flex;
     justify-content: center;
@@ -167,58 +169,76 @@ a:active {
     margin-top:3vw; 
     margin-bottom: -1vw;
     }
-
+    .middleElementParent1{
+    margin-top: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+                
+    width:80vw;
+    height:65vw;
+                
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+    
+        
+    gap:5vw;
+    }
+    .middleImageParent2{
+    border: 2px solid black;
+    background:linear-gradient(black,#545353,#d60606);
+    border-radius: 3vw;
+        
+    width: 30vw;
+    height: 15vw;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
     .googleParent{
     margin-top: 5vw;
         
     width: 90vw;
-    height: 20vw;
+    height: 15vw;
     }
     .googleImage{
-        width: 28vw;
+        width: 40vw;
     }
-    .midleElementParent{
-    margin-top: 3vw;
-      
-    width:80vw;
-    height:30vw;
     
-    gap: 5vw;
-    }
    /*image sizes*/
    .youtubeImage{
-    width: 20vw;
+    width: 27vw;
     }
     .facebookImage{
-    width: 20vw;
+    width: 13vw;
     }
     .facebookMassngerImage{
-        width: 21vw;
+        width: 13vw;
     }
     .googleDriveImage{
-    width: 22vw;
+    width: 15vw;
     }
     .googleTranslaterImage{
-    width: 21vw;
+    width: 13vw;
     }
     .gmailImage{
-        width: 21vw;
+        width: 15vw;
     }
     
-    
-    .middleImageParent{
-        width: 30vw;
-        height: 30vw;
-        border-radius: 20px;
-    }
     .bottomH2Parent{
-    margin-top: -2vw;
+    margin-top: -13vw;
 
     width: 40vw;
-    height: 30vw;
+    height: 20vw;
+    border-radius: 23px;
     }
     h2{
-    font-size:6vw;
+    font-size:7vw;
     font-weight:700;
     }
 
