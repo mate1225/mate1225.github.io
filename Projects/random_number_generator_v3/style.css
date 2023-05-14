@@ -95,6 +95,7 @@ button:hover{
     margin-top: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
+    margin-bottom: 3vh;
     
 
     border: 0.3vh solid var(--borderColor);
