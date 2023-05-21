@@ -1,1 +1,1 @@
-Custom Home Page, mainly biult for personal use
+Custom Home Page, mainly built for personal use
