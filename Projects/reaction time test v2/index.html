@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction time test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+<!--reactio time tester button-->
+    <div>
+        <button class="reactionTimeBtn reactionTimeBtnColor_default" id="btn">
+            <h1 class="reactionTimeBtnText" id="h1Element">click once to start</h1>
+        </button>
+    </div>
+
+<!--score title-->
+    <div class="centering">
+        <h2>Scores</h2>
+    </div >
+    <!--scores-->
+        <div class="scoresParant">
+
+            <div class="scores">
+                <h3>1. Try scores</h3>
+                <ol>
+                    <li>195ms</li>
+                    <li>200ms</li>
+                    <li>205ms</li>
+                    <li>185ms</li>
+                    <li>210ms</li>
+                    <li>Average:199ms</li>
+                </ol>
+            </div>
+            <div class="scores">
+                <h3>2. Try scores</h3>
+                <ol>
+                    <li>190ms</li>
+                    <li>203ms</li>
+                    <li>205ms</li>
+                    <li>180ms</li>
+                    <li>210ms</li>
+                    <li>Average:197,6ms</li>
+                </ol>
+            </div>
+            <div class="scores">
+                <h3>3. Try scores</h3>
+                <ol>
+                    <li>235ms</li>
+                    <li>222ms</li>
+                    <li>225ms</li>
+                    <li>200ms</li>
+                    <li>217ms</li>
+                    <li>Average:219,8ms</li>
+                </ol>
+            </div>
+            <div class="scores">
+                <h3>4. Try scores</h3>
+                <ol>
+                    <li>195ms</li>
+                    <li>200ms</li>
+                    <li>205ms</li>
+                    <li>185ms</li>
+                    <li>210ms</li>
+                    <li>Average:193ms</li>
+                </ol>
+            </div>
+            <div class="scores">
+                <h3>5. Try scores</h3>
+                <ol>
+                    <li>195ms</li>
+                    <li>200ms</li>
+                    <li>205ms</li>
+                    <li>185ms</li>
+                    <li>210ms</li>
+                    <li>Average:175ms</li>
+                </ol>
+            </div>
+
+        </div>
+
+        
+        <div class="centering">
+            <div class="chartSize centering">
+                <canvas id="chartCanvas"></canvas>
+            </div>
+        </div>
+        
+
+<!--saving score-->
+    <div class="botomDiv centering">
+        <button class="saveBtn">
+           <strong>
+                Save Scores
+           </strong> 
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

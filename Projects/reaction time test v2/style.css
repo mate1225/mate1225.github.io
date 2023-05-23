@@ -1,0 +1,158 @@
+
+/*settings*/
+    /*importing google font*/  
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red:#eb0707;
+    --green:#33b010;
+    --light_blue:#83cbf7;
+    --dark_blue:#055180;
+    --gray:#858585;
+    --light_black:#1c1c1c;
+}
+
+body{
+    background-color: white;
+    background-image: url(images/background_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*reaction time buton*/
+.reactionTimeBtn{
+    width: 100%;
+    height: 51vw;
+
+    cursor: pointer;
+
+    border-bottom:0.3vw solid black ;
+}
+
+
+.reactionTimeBtnText{
+    font-size: 10vw;
+    font-style:oblique;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    color:var(--light_black);
+}
+
+p{
+    font-size: 1.3vw;
+    color: var(--gray);
+}
+/*states*/
+.reactionTimeBtnColor_default{
+    background-color: var(--dark_blue);
+}
+.reactionTimeBtnColor_ready{
+    background-color: var(--red);
+}
+.reactionTimeBtnColor_click{
+    background-color: var(--green);
+}
+
+
+/*scores*/
+h2{
+    margin: 2vw;
+    font-size: 5vw;
+    color: var(--light_black);
+}
+.scoresParant{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100vw;
+}
+.scores{
+display: flex;
+justify-content: start;
+align-items: start;
+
+flex-direction: column;
+
+margin-left: 3vw;
+margin-bottom: 3vw;
+}
+h3{
+    font-family: 'Caveat', cursive;
+    font-size: 3vw;
+
+    color: var(--dark_blue);
+}
+ol{
+    font-size: 5vh;
+    margin-left: 5vw;
+    color: var(--light_black);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+}
+
+.chartSize{
+    width: 80vw;
+    height: 40vw;
+
+    margin-top: 3vw;
+
+    background-color: white;
+
+    border: 0.3vw solid var(--dark_blue);
+    border-radius: 3vw;
+
+    padding: 1vw;
+}
+
+/*battom*/
+.botomDiv{
+    margin-top: 5vw;
+    
+    background-color: var(--gray);
+    width: 100%;
+    height: 8vw;
+    
+    border-top: 0.2vw solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.saveBtn{
+    width: 50vw;
+    height: 5vw;
+
+    margin-left: 1vw;
+
+    border: none;
+    border-radius: 1vw;
+
+    background-color: var(--dark_blue);
+
+    font-size: 3vw;
+
+    cursor: pointer;
+}
+.saveBtn:hover{
+    background-color: var(--green);
+}
