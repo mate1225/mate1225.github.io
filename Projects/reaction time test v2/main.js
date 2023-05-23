@@ -1,7 +1,7 @@
 //get elements
 const btn=document.getElementById("btn");
 const h1Element=document.getElementById("h1Element");
-
+const scores=document.querySelector(".scoresParant")
 
 
 //funcions
@@ -19,13 +19,9 @@ const h1Element=document.getElementById("h1Element");
             btn.classList.remove("reactionTimeBtnColor_ready");
             btn.classList.add("reactionTimeBtnColor_click");
 
-            reactionTimeStart=Date.now();
-            console.log(reactionTimeStart);
+          reactionTimeStart=performance.now();
         }
-        else{
-            console.log("time out funcion finished")
-            return;
-        }
+    return;
     }
 
     
@@ -35,13 +31,14 @@ const h1Element=document.getElementById("h1Element");
 
 //defineing veriables
 let count=0;
-let reactionTimeStart=0;
-let reactionTimeStop=0;
+let tryCount=0;
+let reactionTimeStart;
+let reactionTimeEnd;
+let reasult=[];
     btn.addEventListener('click',()=>{
-       
         if(btn.classList.contains("reactionTimeBtnColor_default")){
             count++;
-            console.log(count);
+            console.log(count+". time");
             //removing the default style
             btn.classList.remove("reactionTimeBtnColor_default");
             h1Element.textContent=('');
@@ -51,8 +48,6 @@ let reactionTimeStop=0;
 
             //generarting the random number
            let randomNumber=randomNumberGeneration();
-            console.log("the delay time is: "+randomNumber+"ms");
-
             //delaying the green background adding to a random time (2-5s)
 
             //to do (ez a fukció mindenékppen lefut ami nem jó ha a felhasználó 
@@ -74,17 +69,32 @@ let reactionTimeStop=0;
        //chaning the background color to blue after the green color apaired and the user clicked
        else  if(btn.classList.contains("reactionTimeBtnColor_click")){
         //reaction time 
-        console.log("the time now is : "+Date.now());
-        reactionTimeStop=Date.now()-reactionTimeStart;
-        console.log("your reaction time is: "+reactionTimeStop);
+      reactionTimeEnd=performance.now();
+      let reactionTime= Math.round((reactionTimeEnd-reactionTimeStart)-50);
+      reasult.push(reactionTime);
         //changing the backgound to default
         btn.classList.remove("reactionTimeBtnColor_click");
         btn.classList.add("reactionTimeBtnColor_default");
         //displaying the reasult
-        h1Element.textContent=('your time is: '+reactionTimeStop+"ms");
+        h1Element.textContent=('your time is: '+reactionTime+"ms");
     };
     if(count===5){
         count=0;
+        tryCount++;
+
+        console.log(reasult);
+        console.log(tryCount+" try");
+
+        //creating the elements
+        const divElemnt=document.createElement("div");
+        const h3Element=document.createElement("h3");
+        const olElemnt=document.createElement("ol");
+
+        divElemnt.appendChild(h3Element,olElemnt);
+        divElemnt.
+       console.log(divElemnt);
+
+
     }
 
     });
