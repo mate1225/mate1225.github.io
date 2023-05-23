@@ -81,7 +81,7 @@ let reactionTimeStop=0;
         btn.classList.remove("reactionTimeBtnColor_click");
         btn.classList.add("reactionTimeBtnColor_default");
         //displaying the reasult
-        h1Element.textContent=('your time is: '+reactionTimeStop);
+        h1Element.textContent=('your time is: '+reactionTimeStop+"ms");
     };
     if(count===5){
         count=0;
