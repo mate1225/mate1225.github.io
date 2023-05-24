@@ -94,12 +94,19 @@ flex-direction: column;
 
 margin-left: 3vw;
 margin-bottom: 3vw;
+
 }
 h3{
     font-family: 'Caveat', cursive;
-    font-size: 3vw;
+    font-size: 4vw;
 
     color: var(--dark_blue);
+}
+h4{
+    font-family: 'Caveat', cursive;
+    font-size: 3vw;
+
+    color: var(--red);
 }
 ol{
     font-size: 5vh;
@@ -108,7 +115,9 @@ ol{
     font-family: 'Caveat', cursive;
     font-weight: 700;
 }
-
+li{
+    font-size: 3vw;
+}
 .chartSize{
     width: 80vw;
     height: 40vw;
@@ -136,7 +145,11 @@ ol{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+footer{
+    display: flex;
+    gap: 40vw;
 }
 .saveBtn{
     width: 50vw;

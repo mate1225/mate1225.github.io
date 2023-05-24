@@ -21,9 +21,19 @@ const scores=document.querySelector(".scoresParant")
 
           reactionTimeStart=performance.now();
         }
+
+        console.log("backgroundColorhange funcion finished")
     return;
     }
 
+    function average(resoults){
+        let sum=0;
+    for(let i=0;i<reasult.length;i++){
+        sum=sum+resoults[i];
+    }
+     
+    return Math.round(sum/5);
+    }
     
 
 
@@ -38,7 +48,7 @@ let reasult=[];
     btn.addEventListener('click',()=>{
         if(btn.classList.contains("reactionTimeBtnColor_default")){
             count++;
-            console.log(count+". time");
+            
             //removing the default style
             btn.classList.remove("reactionTimeBtnColor_default");
             h1Element.textContent=('');
@@ -60,42 +70,64 @@ let reasult=[];
         }
 
        else if(btn.classList.contains("reactionTimeBtnColor_ready")){
-        console.log("to early")
-        h1Element.textContent=('to Early, try agin!');
-        btn.classList.remove("reactionTimeBtnColor_ready");
-        btn.classList.add("reactionTimeBtnColor_default");
+            count--;
+            
+            h1Element.textContent=('to Early, try agin!');
+            btn.classList.remove("reactionTimeBtnColor_ready");
+            btn.classList.add("reactionTimeBtnColor_default");
        }
 
        //chaning the background color to blue after the green color apaired and the user clicked
        else  if(btn.classList.contains("reactionTimeBtnColor_click")){
-        //reaction time 
-      reactionTimeEnd=performance.now();
-      let reactionTime= Math.round((reactionTimeEnd-reactionTimeStart)-50);
-      reasult.push(reactionTime);
-        //changing the backgound to default
-        btn.classList.remove("reactionTimeBtnColor_click");
-        btn.classList.add("reactionTimeBtnColor_default");
-        //displaying the reasult
-        h1Element.textContent=('your time is: '+reactionTime+"ms");
-    };
-    if(count===5){
-        count=0;
-        tryCount++;
+            //reaction time 
+            reactionTimeEnd=performance.now();
+            let reactionTime= Math.round((reactionTimeEnd-reactionTimeStart)-50);
+            reasult.push(reactionTime);
+            //changing the backgound to default
+            btn.classList.remove("reactionTimeBtnColor_click");
+            btn.classList.add("reactionTimeBtnColor_default");
+            //displaying the reasult
+            h1Element.textContent=('your '+count+'. time is: '+reactionTime+"ms");
 
-        console.log(reasult);
-        console.log(tryCount+" try");
+            if(count===5){
+                count=0;
+                tryCount++;
+               
+                
+                const averageScore=average(reasult);
+                h1Element.textContent=('your average time is: '+averageScore+"ms");
+                //creating the elements and displaying the resoults
+                const divElemnt=document.createElement("div");
+                divElemnt.className ="scores";
+                
+                const h3Element=document.createElement("h3");
+                h3Element.textContent=tryCount+". Attempt";
+                divElemnt.appendChild(h3Element);
 
-        //creating the elements
-        const divElemnt=document.createElement("div");
-        const h3Element=document.createElement("h3");
-        const olElemnt=document.createElement("ol");
+                const olElemnt=document.createElement("ol");
+                let liElement;
 
-        divElemnt.appendChild(h3Element,olElemnt);
-        divElemnt.
-       console.log(divElemnt);
+                for(let i=0;i<reasult.length;i++){
+                    liElement=document.createElement("li");
+                    liElement.textContent=reasult[i]+"ms";
+                    olElemnt.appendChild(liElement);
+                }
 
+                
+       
+                divElemnt.appendChild(olElemnt);
 
+                const h4Element=document.createElement("h4");
+                h4Element.textContent="Average: "+averageScore+"ms";
+                divElemnt.appendChild(h4Element);
+
+                scores.appendChild(divElemnt);
+              
+                //clearing the score array
+                reasult.length=0;
     }
+    };
+   
 
     });
 
