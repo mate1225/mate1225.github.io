@@ -7,10 +7,10 @@ const h1Element2=document.createElement("h2");
 //funcions
 
     //random number generator 1000-5000 
-      function randomNumberGeneration(){
+    /*  function randomNumberGeneration(){
         return (Math.floor(Math.random()*5)+2)*1000;
     }
-    
+    */
 
     //background color changing frome red to green
     function backgroundColorhange(){
@@ -57,14 +57,14 @@ let reasult=[];
             btn.classList.add("reactionTimeBtnColor_ready")
 
             //generarting the random number
-           let randomNumber=randomNumberGeneration();
+           //let randomNumber=randomNumberGeneration();
             //delaying the green background adding to a random time (2-5s)
 
             //to do (ez a fukció mindenékppen lefut ami nem jó ha a felhasználó 
             // hamarabb megnyomta a gombot és ezért visszta tért az alap állásba , bugot okozhat a setInterval() funkcióval kéne majd megoldani valahogy úgy 
             //hogy le lehessen állítani a funkciót ha lenyomta a felhasználó hamarabb a gombot )
 
-            setTimeout(backgroundColorhange,randomNumber);
+            setTimeout(backgroundColorhange,1000);
 
             
         }
