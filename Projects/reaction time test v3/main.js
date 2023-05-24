@@ -96,6 +96,9 @@ let reasult=[];
                 
                 const averageScore=average(reasult);
                 h1Element.textContent=('your average time is: '+averageScore+"ms");
+
+                h1Element.classList.add("averageFontColor");
+                btn.classList.add("averageButtonColor");
                 //creating the elements and displaying the resoults
                 const divElemnt=document.createElement("div");
                 divElemnt.className ="scores";
@@ -128,6 +131,10 @@ let reasult=[];
     }
     };
    
+    if(count===1){
+        h1Element.classList.remove("averageFontColor");
+        btn.classList.remove("averageButtonColor");
+    }
 
     });
 

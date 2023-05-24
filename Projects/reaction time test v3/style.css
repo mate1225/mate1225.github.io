@@ -12,9 +12,11 @@
 :root{
     --red:#eb0707;
     --green:#33b010;
+    --darkGreen:#188f34;
     --light_blue:#83cbf7;
     --dark_blue:#055180;
     --gray:#858585;
+    --darkerGray:#5b5c5b;
     --light_black:#1c1c1c;
 }
 
@@ -96,6 +98,13 @@ margin-left: 3vw;
 margin-bottom: 3vw;
 
 }
+.averageFontColor{
+    color:#704706;
+}
+.averageButtonColor{
+    background-color: #fccdba;
+}
+
 h3{
     font-family: 'Caveat', cursive;
     font-size: 4vw;
@@ -141,15 +150,13 @@ li{
     height: 8vw;
     
     border-top: 0.2vw solid black;
+
+    
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-footer{
-    display: flex;
-    gap: 40vw;
 }
 .saveBtn{
     width: 50vw;
@@ -169,3 +176,30 @@ footer{
 .saveBtn:hover{
     background-color: var(--green);
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+     align-self: center;
+ 
+     padding: 1vw;
+ 
+     width: 100%;
+   
+ 
+     font-size: 1.5vw;
+     text-align: center;
+     color: var(--dark_blue);
+ 
+     background-color:#5c7b8a ;
+     border-top: 0.1vw solid black;
+ }
+
+ a{
+    
+    text-decoration: none;
+    color: var(--light_black);
+ }
+ a:hover{
+    color: var(--light_blue);
+ }
