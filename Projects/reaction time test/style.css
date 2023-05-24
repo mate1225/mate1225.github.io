@@ -99,10 +99,11 @@ margin-bottom: 3vw;
 
 }
 .averageFontColor{
-    color:#704706;
+    color:#0789f3;
 }
 .averageButtonColor{
-    background-color: #fccdba;
+    background-color: var(--darkerGray);
+    opacity: 0.6;
 }
 
 h3{
