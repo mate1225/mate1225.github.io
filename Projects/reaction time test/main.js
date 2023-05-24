@@ -99,6 +99,9 @@ let reasult=[];
 
                 h1Element.classList.add("averageFontColor");
                 btn.classList.add("averageButtonColor");
+                const h1Element2=document.createElement("h2");
+                h1Element2.textContent="click once to try again!"
+                btn.appendChild(h1Element2);
                 //creating the elements and displaying the resoults
                 const divElemnt=document.createElement("div");
                 divElemnt.className ="scores";
