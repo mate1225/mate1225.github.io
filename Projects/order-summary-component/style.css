@@ -1,0 +1,124 @@
+/*settings*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light_blue:#698DFF;
+    --dark_blue:#1F2E55;
+    --grayi-blue:#717FA6;
+    --bright_blue:#382AE1;
+    --light_black:#231F20;
+    --gray:#717FA6;
+    --white:#FFFFFF;
+    --background_color:#E0E8FF;
+    --grayi-White:#F7F9FF;
+}
+
+body{
+    background-image:url(images/pattern-background-mobile.svg);
+    background-position:top;
+    
+    background-repeat: no-repeat;
+
+    background-color: var(--background_color);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*main*/
+.mainDivStyle{
+    background-color: white;
+
+    border-radius: 20px;
+
+    width: 327px;
+    height: 567px;
+
+    margin-top: 71px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+#illustrationHeroImage{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    width: 327px;
+    height: 160px;
+}
+h1{
+    font-size: 1.375rem;
+    font-weight: 900;
+
+    margin-top: 32px;
+
+    color: var(--dark_blue);
+}
+.seletcionAreaDiv{
+    display: flex;
+    flex-direction: column;
+}
+#orderPElement{
+    font-size: 0.938rem;
+    font-weight: 500;
+    text-align: center;
+
+    color: var(--grayi-blue);
+
+    margin-top: 16px;
+}
+.anualPlanDiv{
+border-radius: 20px;
+
+margin-top: 24px;
+
+width: 279px;
+height: 81px;
+
+background-color: var(--grayi-White);
+
+display: flex;
+flex-direction: row;
+gap: 5px;
+}
+#anualPlanText{
+margin-left: 20px;
+margin-right: 50px;
+}
+h3{
+    font-size:0.875;
+    font-weight:900;
+
+    color: var(--dark_blue);
+}
+
+/*footer*/
+.footerStyle{
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 3vw;
+
+    margin-top: 140px;
+}
+.footerLinks{
+    text-decoration: none;
+}
