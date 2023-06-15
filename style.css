@@ -55,6 +55,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 header {
   margin-top: 1vh;
 
@@ -76,7 +77,6 @@ h2 {
   color: #234bcf;
 }
 main {
-  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
@@ -84,8 +84,7 @@ main {
 
   gap: 7vh;
 
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin: 2rem 10rem 2rem 10rem;
 }
 a {
   margin-left: 1rem;
@@ -133,16 +132,34 @@ a:hover {
 }
 
 /*mediaquaries*/
-
+@media (max-width: 670px) {
+  main {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 580px) {
   h1 {
     font-size: 3.5rem;
   }
   h2 {
+    font-size: 2rem;
     font-size: 2.5rem;
   }
   a {
     padding: 1.5rem;
+  }
+  .centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    margin: 2rem 0rem 2rem 0rem;
   }
 }
 @media (max-width: 500px) {
@@ -153,8 +170,16 @@ a:hover {
     font-size: 2rem;
   }
   a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 2rem;
+  }
+  .centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    margin: 2rem 0rem 2rem 0rem;
   }
 }
 @media (max-width: 360px) {
@@ -169,6 +194,11 @@ a:hover {
     padding: 2rem;
   }
   main {
-    margin: 0;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
