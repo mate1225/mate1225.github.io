@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*custom css code*/
+:root {
+  --light_blue: #698dff;
+  --dark_blue: #1f2e55;
+  --grayi-blue: #717fa6;
+  --bright_blue: #382ae1;
+  --light_black: #231f20;
+  --white: #ffffff;
+  --background_color: #e0e8ff;
+  --grayi-White: #f7f9ff;
+  --hover: #766cf1;
+}
+
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+
+  background-color: var(--background_color);
+  font-family: "Red Hat Display", sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*main*/
+.mainDivStyle {
+  margin-left: 24px;
+  margin-right: 24px;
+
+  border-radius: 20px;
+
+  background: var(--white);
+
+  overflow: hidden;
+
+  max-width: 450px;
+}
+#illustrationHeroImage {
+  width: 100%;
+}
+.mainContentDiv {
+  display: grid;
+  place-content: center;
+}
+#headerContent {
+  padding: 32px 32px 0px 32px;
+}
+h1 {
+  font-size: 1.375rem;
+  font-weight: 900;
+  color: var(--dark_blue);
+}
+p {
+  color: var(--grayi-blue);
+}
+#orderDescription {
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: var(--grayi-blue);
+
+  margin-top: 16px;
+
+  text-align: center;
+}
+
+.anualPlan {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 24px 24px 0px 24px;
+
+  background: var(--grayi-White);
+
+  padding: 16px;
+
+  border-radius: 11px;
+  line-height: 18.52px;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: var(--dark_blue);
+}
+#anualPlanPrice {
+  margin-left: 20px;
+  margin-right: auto;
+}
+#price {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--grayi-blue);
+}
+#changeBtn {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: var(--bright_blue);
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+#changeBtn:hover {
+  color: var(--hover);
+}
+#proceedBtn {
+  font-size: 0.938rem;
+  font-weight: 900;
+  color: var(--white);
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background: var(--bright_blue);
+
+  border: none;
+  border-radius: 11px;
+
+  margin: 24px;
+
+  box-shadow: 0 20px 30px -8px #c5bdf5;
+
+  cursor: pointer;
+}
+#proceedBtn:hover {
+  background: var(--hover);
+}
+
+#cancelBtn {
+  font-size: 0.938rem;
+  font-weight: 900;
+  color: var(--grayi-blue);
+
+  border: none;
+  background: none;
+
+  margin-bottom: 32px;
+
+  cursor: pointer;
+}
+#cancelBtn:hover {
+  color: var(--dark_blue);
+}
+
+/*footer*/
+.footerStyle {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+.footerLinks {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--light_black);
+}
+.footerLinks:hover {
+  color: var(--bright_blue);
+}
+/*mediaquaries*/
+@media (min-width: 376px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+  }
+}
+@media (min-width: 500px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  #orderDescription {
+    margin-top: 17px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .anualPlan {
+    padding: 25px;
+    margin: 20px 48px 0px 48px;
+  }
+  #changeBtn {
+    font-size: 0.875rem;
+  }
+  #proceedBtn {
+    margin-top: 32px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  #cancelBtn {
+    margin-bottom: 48px;
+  }
+}
