@@ -177,12 +177,6 @@ h4 {
 
   text-decoration: line-through;
 }
-h5 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--White);
-}
-
 #btn {
   background: var(--Dark_cyan);
 
