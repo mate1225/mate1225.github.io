@@ -1,0 +1,232 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*custom css code*/
+:root {
+  /* Primary*/
+  --Moderate_violet: hsl(263, 55%, 52%);
+  --Very_dark_grayish_blue: hsl(217, 19%, 35%);
+  --Very_dark_blackish_blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral*/
+
+  --Light_gray: hsl(0, 0%, 81%);
+  --Light_grayish_blue: hsl(210, 46%, 95%);
+}
+body {
+  background: var(--Light_grayish_blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+
+  font-size: 0.875rem;
+}
+.flexContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*main*/
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  margin: 24px;
+
+  max-width: 1110px;
+  max-height: 572px;
+}
+h2 {
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 0.688rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+h1 {
+  margin-top: 18px;
+
+  line-height: 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+p {
+  margin-top: 16px;
+  opacity: 0.7;
+
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+.images {
+  border-radius: 30px;
+
+  margin-right: 17px;
+
+  width: 30px;
+  height: 30px;
+}
+#danielImage {
+  border: 3px solid #a775f1;
+}
+#patrikImage {
+  border: 3px solid var(--Moderate_violet);
+}
+.items {
+  border-radius: 8px;
+  color: var(--White);
+  padding: 32px;
+}
+.Daniel {
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+  background: var(--Moderate_violet);
+}
+/*
+#quotationImage {
+}*/
+.Jonathan {
+  grid-column: 3/4;
+  grid-row: 1/2;
+
+  background: var(--Very_dark_grayish_blue);
+}
+.Kira {
+  grid-column: 4/5;
+  grid-row: 1/3;
+
+  background: var(--White);
+
+  color: var(--Very_dark_grayish_blue);
+}
+.Jeanette {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  background: var(--White);
+
+  color: var(--Very_dark_grayish_blue);
+}
+.Patrick {
+  grid-column: 2/4;
+  grid-row: 2/3;
+
+  background: var(--Very_dark_blackish_blue);
+}
+
+/*footer*/
+.attribution {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  display: flex;
+  column-gap: 2rem;
+}
+.footerGroup {
+  display: flex;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.attribution a:hover {
+  color: var(--Moderate_violet);
+}
+
+@media (max-width: 1100px) {
+  main {
+    margin: 71px 24px 71px 24px;
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    row-gap: 30px;
+  }
+  .Daniel {
+    grid-row: 1/3;
+    grid-row: 1/2;
+  }
+  .Jonathan {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  .Kira {
+    grid-column: 1/-1;
+    grid-row: 5/-1;
+  }
+  .Jeanette {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+  .Patrick {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+  .attribution {
+    grid-column: 1/-1;
+    grid-row: 6/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    column-gap: 3vw;
+  }
+}
