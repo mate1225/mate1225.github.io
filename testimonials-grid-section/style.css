@@ -179,13 +179,18 @@ p {
 }
 .footerGroup {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attribution p {
+  margin: 0px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
   cursor: pointer;
-  margin-top: 13px;
 }
+
 .attribution a:hover {
   color: var(--Moderate_violet);
 }
@@ -222,11 +227,18 @@ p {
   .attribution {
     grid-column: 1/-1;
     grid-row: 6/-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    display: flex;
-    column-gap: 3vw;
+    font-size: 0.7rem;
+  }
+  .attribution a {
+    font-size: 0.7rem;
+  }
+  .attribution p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    height: 150vh;
   }
 }
