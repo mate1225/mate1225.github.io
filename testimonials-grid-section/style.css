@@ -133,6 +133,11 @@ p {
   grid-row: 1/2;
 
   background: var(--Moderate_violet);
+
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 80px;
+  background-size: 22%;
 }
 /*
 #quotationImage {
@@ -237,6 +242,10 @@ p {
   }
   .attribution p {
     font-size: 0.7rem;
+  }
+  .Daniel {
+    background-position: top right 15px;
+    background-size: 36%;
   }
 }
 
