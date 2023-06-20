@@ -170,11 +170,13 @@ p {
 .attribution {
   grid-column: 2/4;
   grid-row: 3/4;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 1rem;
-  display: flex;
+
   column-gap: 2rem;
 }
 .footerGroup {
@@ -228,6 +230,7 @@ p {
     grid-column: 1/-1;
     grid-row: 6/-1;
     font-size: 0.7rem;
+    flex-wrap: wrap;
   }
   .attribution a {
     font-size: 0.7rem;
