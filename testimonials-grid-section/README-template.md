@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-page-css-gridcss-flexboxcss-media-query-sZX77BvXvH))
 - Live Site URL: (https://mate1225.github.io/testimonials-grid-section/index.html)
 
 ## My process
