@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-page-css-gridcss-flexboxcss-media-query-sZX77BvXvH))
 - Live Site URL: (https://mate1225.github.io/testimonials-grid-section/index.html)
 
 ## My process
@@ -59,7 +59,7 @@ i want to continue the learning on css grid, because i had some trouble with the
 ### Useful resources
 
 - (https://www.youtube.com/watch?v=rg7Fvvl3taU&t=464s)- This helped me with the fixing of the zooming bug that i created during the making of this project.
-- (https://css-tricks.com/snippets/css/complete-guide-grid/) - This is good i you forget how some properties works
+- (https://css-tricks.com/snippets/css/complete-guide-grid/) - This is a good site if you forget how some properties works
 
 ## Author
 
