@@ -1,0 +1,83 @@
+.gridContainer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 24px;
+}
+.gridItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+
+  margin-top: 35px;
+}
+h6 {
+  color: var(--Dark_Grayish_Blue_Text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+h5 {
+  color: var(--Dark_Grayish_Blue_Text);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 9px;
+}
+.cardNumber {
+  color: var(--Very_Dark_Blue_Text);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 30px;
+  letter-spacing: -2px;
+}
+.followersCount {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+.facebook {
+  border-top: 4px solid var(--Facebook);
+  border-radius: 5px;
+}
+.twitter {
+  border-top: 4px solid var(--Twitter);
+  border-radius: 5px;
+}
+.instagram {
+  /*
+  border-top: 4px solid;
+  border-image: var(--Instagram) 1;
+  */
+  border-radius: 5px;
+}
+#linearBorder {
+  height: 4px;
+  width: 100%;
+  background: var(--Instagram);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.youtube {
+  border-top: 4px solid var(--YouTube);
+  border-radius: 5px;
+}
+@media (min-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

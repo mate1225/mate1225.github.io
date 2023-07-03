@@ -1,0 +1,26 @@
+/*footer*/
+
+.footerStyle {
+  margin: 45px 10px 10px 10px;
+  font-size: 11px;
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+
+  font-size: 1rem;
+}
+.footerStyle a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.footerStyle a:hover {
+  color: var(--Lime_Green);
+}
+.footerStyleChildern {
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+}

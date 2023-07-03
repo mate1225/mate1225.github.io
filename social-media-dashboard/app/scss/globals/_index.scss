@@ -1,0 +1,44 @@
+@forward "boilerplate";
+@forward "colors";
+@forward "fonts";
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body {
+  font-family: var(--font_style);
+  font-size: 0.875rem;
+}
+h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--Dark_Grayish_Blue_Text);
+  line-height: 17px;
+}
+p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 2px;
+}
+.greenText {
+  color: var(--Lime_Green);
+}
+.redText {
+  color: var(--Bright_Red);
+}
+@media (min-width: 1165px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.cardBackgroundLight {
+  background: var(--Light_Grayish_Blue_Card-BG);
+}
+.cardBackgroundDark {
+  background: var(--Dark_Desaturated_Blue_Card-BG);
+}

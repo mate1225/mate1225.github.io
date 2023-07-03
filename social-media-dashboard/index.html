@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | social media dashboard</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body class="">
+    <header class="headerColorLight">
+      <article>
+        <section class="mainTitle">
+          <h1 class="h1ColorBright">Social Media Dashboard</h1>
+          <h3>Total Followers: 23,004</h3>
+        </section>
+        <section class="darkModeSection">
+          <label for="btn">Dark Mode</label>
+          <!--idgélenesen amíg nem rakom ide a megfelelő gombot-->
+          <label class="switch">
+            <input type="checkbox" id="btn" />
+            <span class="slider"></span>
+          </label>
+        </section>
+      </article>
+    </header>
+    <main>
+      <section class="gridContainer">
+        <section class="gridItems cardBackgroundLight facebook">
+          <div class="cardHeader">
+            <img src="images/icon-facebook.svg" alt="facebook" />
+            <h6>@nathanf</h6>
+          </div>
+          <h4 class="cardNumber">1987</h4>
+          <h5>Followers</h5>
+          <div class="followersCount">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="greenText">12 Today</p>
+          </div>
+        </section>
+        <section class="gridItems cardBackgroundLight twitter">
+          <div class="cardHeader">
+            <img src="images/icon-twitter.svg" alt="twitter" />
+            <h6>@nathanf</h6>
+          </div>
+          <h4 class="cardNumber">1044</h4>
+          <h5>Followers</h5>
+          <div class="followersCount">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="greenText">99 Today</p>
+          </div>
+        </section>
+        <section class="gridItems cardBackgroundLight instagram">
+          <div id="linearBorder"></div>
+          <div class="cardHeader">
+            <img src="images/icon-instagram.svg" alt="instagram" />
+            <h6>@nathanf</h6>
+          </div>
+          <h4 class="cardNumber">11k</h4>
+          <h5>Followers</h5>
+          <div class="followersCount">
+            <img src="images/icon-up.svg" alt="icon-up" />
+            <p class="greenText">1099 Today</p>
+          </div>
+        </section>
+        <section class="gridItems cardBackgroundLight youtube">
+          <div class="cardHeader">
+            <img src="images/icon-youtube.svg" alt="youtube" />
+            <h6>@nathanf</h6>
+          </div>
+          <h4 class="cardNumber">8239</h4>
+          <h5>Subscribers</h5>
+          <div class="followersCount">
+            <img src="images/icon-down.svg" alt="icon-down" />
+            <p class="redText">144 Today</p>
+          </div>
+        </section>
+      </section>
+      <h2 class="h2ColorLight">Overview - Today</h2>
+      <section class="overviewgridContainer">
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Page Views</h3>
+            <img src="images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">87</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-up.svg" alt="icon-up" />
+              <p class="greenText">3%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Likes</h3>
+            <img src="images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">52</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-down.svg" alt="icon-down" />
+              <p class="redText">2%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Likes</h3>
+            <img src="images/icon-instagram.svg" alt="instagram" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">5462</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-up.svg" alt="icon-up" />
+              <p class="greenText">2257%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Page Views</h3>
+            <img src="images/icon-instagram.svg" alt="instagram" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">52k</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-up.svg" alt="icon-up" />
+              <p class="greenText">1375%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Retweets</h3>
+            <img src="images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">117</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-up.svg" alt="icon-up" />
+              <p class="greenText">303%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Likes</h3>
+            <img src="images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">507</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-up.svg" alt="icon-up" />
+              <p class="greenText">553%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Likes</h3>
+            <img src="images/icon-youtube.svg" alt="youtube" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">107</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-down.svg" alt="icon-down" />
+              <p class="redText">19%</p>
+            </div>
+          </div>
+        </section>
+        <section class="overviewGridItems cardBackgroundLight">
+          <div class="overviewItems">
+            <h3>Total Views</h3>
+            <img src="images/icon-youtube.svg" alt="youtube" />
+          </div>
+          <div class="overviewItems countSection">
+            <h4 class="cardoverviewNumber">1407</h4>
+            <div class="overviewfollowersCount">
+              <img src="images/icon-down.svg" alt="icon-down" />
+              <p class="redText">12%</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footerStyle centering">
+      <div class="footerStyleChildern">
+        <p>Challenge by:</p>
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </div>
+
+      <div class="footerStyleChildern">
+        <p>Coded by:</p>
+        <a href="https://github.com/mate1225/mate1225.github.io" target="_blank"
+          >Mészáros Máté</a
+        >
+      </div>
+    </footer>
+
+    <script src="app/js/main.js"></script>
+  </body>
+</html>

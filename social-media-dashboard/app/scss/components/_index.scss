@@ -1,0 +1,39 @@
+@use "../util" as *;
+@forward "header";
+@forward "topSection";
+@forward "footer.scss";
+@forward "overview";
+@forward "darkModeBotten";
+main {
+  margin-top: -44px;
+  z-index: 2;
+
+  margin-left: 25px;
+  margin-right: 25px;
+
+  max-width: 1110px;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 46px;
+  margin-bottom: 27px;
+}
+.h2ColorLight {
+  color: var(--Dark_Grayish_Blue_Text);
+}
+.h2ColorDark {
+  color: var(--White_Text);
+}
+.cardNumberColorLight {
+  color: var(--Very_Dark_Blue_Text);
+}
+.cardNumberColorDark {
+  color: var(--White_Text);
+}
+
+@media (min-width: 1165px) {
+  main {
+    width: 1110px;
+  }
+}
