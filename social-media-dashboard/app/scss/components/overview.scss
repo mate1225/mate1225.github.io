@@ -6,7 +6,9 @@
 .overviewGridItems {
   padding: 27px 31px 19px 24px;
   border-radius: 5px;
+  cursor: pointer;
 }
+
 .overviewItems {
   display: flex;
   justify-content: space-between;
@@ -17,7 +19,6 @@
   margin-top: 23px;
 }
 .cardoverviewNumber {
-  color: var(--Very_Dark_Blue_Text);
   font-size: 2rem;
   font-weight: 700;
 }

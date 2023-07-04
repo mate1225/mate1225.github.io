@@ -75,6 +75,9 @@ header {
   --Light_Grayish_Blue_Card-BG: hsl(227, 47%, 96%);
   --Dark_Grayish_Blue_Text: hsl(230, 12%, 44%);
   --Very_Dark_Blue_Text: hsl(230, 17%, 14%);
+  /*hover*/
+  --hover_Light: hsla(228, 33%, 91%, 1);
+  --hover_Dark: hsla(228, 25%, 27%, 1);
 }
 
 :root {
@@ -121,15 +124,13 @@ p {
     align-items: center;
     flex-direction: column;
   }
-}
+} /*
 .cardBackgroundLight {
   background: var(--Light_Grayish_Blue_Card-BG);
 }
-
 .cardBackgroundDark {
   background: var(--Dark_Desaturated_Blue_Card-BG);
-}
-
+}*/
 header {
   padding-left: 25px;
   padding-right: 25px;
@@ -156,14 +157,6 @@ header {
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-.h1ColorBright {
-  color: var(--Very_Dark_Blue_Text);
-}
-
-.h1ColorDark {
-  color: var(--White_Text);
 }
 
 label {
@@ -218,6 +211,7 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .cardHeader {
@@ -242,7 +236,6 @@ h5 {
 }
 
 .cardNumber {
-  color: var(--Very_Dark_Blue_Text);
   font-size: 3.5rem;
   font-weight: 700;
   margin-top: 30px;
@@ -267,10 +260,6 @@ h5 {
 }
 
 .instagram {
-  /*
-  border-top: 4px solid;
-  border-image: var(--Instagram) 1;
-  */
   border-radius: 5px;
 }
 
@@ -335,6 +324,7 @@ h5 {
 .overviewGridItems {
   padding: 27px 31px 19px 24px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .overviewItems {
@@ -348,7 +338,6 @@ h5 {
 }
 
 .cardoverviewNumber {
-  color: var(--Very_Dark_Blue_Text);
   font-size: 2rem;
   font-weight: 700;
 }
@@ -434,20 +423,50 @@ h5 {
 }
 
 /*dark mode colors*/
+/*common*/
+.textColor_light {
+  color: var(--Very_Dark_Blue_Text);
+}
+
+.textColor_Dark {
+  color: var(--White_Text);
+}
+
+/*body*/
 .darkMode {
   background: var(--Very_Dark_Blue_BG);
 }
 
-.h1DarkColor {
-  color: var(--White_Text);
+/*header*/
+.headerBackground_Light {
+  background: var(--Very_Pale_Blue_Top-BG-Pattern);
 }
 
-.h2DarkColor {
-  color: var(--White_Text);
+.headerBackground_Dark {
+  background: var(--Very_Dark_Blue_Top-BG-Pattern);
 }
 
-.darkCardBackgroundColor {
-  background: var(--Very_Dark_Blue_BG);
+/*cards*/
+.cardBackground_Dark {
+  background: var(--Dark_Desaturated_Blue_Card-BG);
+}
+
+.cardBackground_Light {
+  background: var(--Light_Grayish_Blue_Card-BG);
+}
+
+/*h2 color*/
+.h2LightMode {
+  color: var(--Dark_Grayish_Blue_Text);
+}
+
+/*hover*/
+.cardBackground_Light:hover {
+  background: var(--hover_Light);
+}
+
+.cardBackground_Dark:hover {
+  background: var(--hover_Dark);
 }
 
 main {

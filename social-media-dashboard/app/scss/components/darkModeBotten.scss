@@ -66,17 +66,40 @@
     )
   );
 }
-
 /*dark mode colors*/
+/*common*/
+.textColor_light {
+  color: var(--Very_Dark_Blue_Text);
+}
+.textColor_Dark {
+  color: var(--White_Text);
+}
+/*body*/
 .darkMode {
   background: var(--Very_Dark_Blue_BG);
 }
-.h1DarkColor {
-  color: var(--White_Text);
+/*header*/
+.headerBackground_Light {
+  background: var(--Very_Pale_Blue_Top-BG-Pattern);
 }
-.h2DarkColor {
-  color: var(--White_Text);
+.headerBackground_Dark {
+  background: var(--Very_Dark_Blue_Top-BG-Pattern);
 }
-.darkCardBackgroundColor {
-  background: var(--Very_Dark_Blue_BG);
+/*cards*/
+.cardBackground_Dark {
+  background: var(--Dark_Desaturated_Blue_Card-BG);
+}
+.cardBackground_Light {
+  background: var(--Light_Grayish_Blue_Card-BG);
+}
+/*h2 color*/
+.h2LightMode {
+  color: var(--Dark_Grayish_Blue_Text);
+}
+/*hover*/
+.cardBackground_Light:hover {
+  background: var(--hover_Light);
+}
+.cardBackground_Dark:hover {
+  background: var(--hover_Dark);
 }

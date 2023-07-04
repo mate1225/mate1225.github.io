@@ -1,15 +1,2 @@
-"use strict";
-var btn = document.getElementById("btn"),
-  h1Element = document.querySelector("h1"),
-  h2Element = document.querySelector("h2"),
-  headerBackground = document.querySelector("header"),
-  theme = localStorage.getItem("theme");
-function handleThemeToggle() {
-  document.body.classList.toggle("darkMode"),
-    document.body.classList.contains("darkMode")
-      ? localStorage.setItem("theme", "darkMode")
-      : localStorage.removeItem("theme");
-}
-theme && document.body.classList.add(theme),
-  btn.addEventListener("click", handleThemeToggle);
+"use strict";var btn=document.getElementById("btn"),mainTitle=document.getElementById("mainTitle"),headerBackground=document.querySelector("header"),label=document.querySelector("label"),cardNumbers=document.querySelectorAll("h4"),cards=document.querySelectorAll(".cards"),secondTitle=document.querySelector("h2"),footerText=document.querySelectorAll(".footerText"),theme=localStorage.getItem("theme");if(theme){document.body.classList.add(theme),mainTitle.classList.add("textColor_Dark"),headerBackground.classList.add("headerBackground_Dark"),label.classList.add("textColor_Dark");for(var i=0;i<cardNumbers.length;i++)cardNumbers[i].classList.add("textColor_Dark");for(var _i=0;_i<cards.length;_i++)cards[_i].classList.remove("cardBackground_Light"),cards[_i].classList.add("cardBackground_Dark");secondTitle.classList.add("textColor_Dark"),secondTitle.classList.remove("h2LightMode"),secondTitle.classList.add("textColor_Dark");for(var _i2=0;_i2<footerText.length;_i2++)footerText[_i2].classList.add("textColor_Dark")}function handleThemeToggle(){document.body.classList.toggle("darkMode"),mainTitle.classList.toggle("textColor_Dark"),headerBackground.classList.toggle("headerBackground_Dark"),label.classList.toggle("textColor_Dark");for(var e=0;e<cards.length;e++)cards[e].classList.toggle("cardBackground_Light"),cards[e].classList.toggle("cardBackground_Dark");for(var t=0;t<cardNumbers.length;t++)cardNumbers[t].classList.toggle("textColor_light"),cardNumbers[t].classList.toggle("textColor_Dark");for(var a=0;a<footerText.length;a++)footerText[a].classList.toggle("textColor_Dark");document.body.classList.contains("darkMode")?(localStorage.setItem("theme","darkMode"),secondTitle.classList.remove("h2LightMode"),secondTitle.classList.add("textColor_Dark")):(localStorage.removeItem("theme"),secondTitle.classList.remove("textColor_Dark"),secondTitle.classList.add("h2LightMode"))}btn.addEventListener("click",handleThemeToggle);
 //# sourceMappingURL=main.js.map

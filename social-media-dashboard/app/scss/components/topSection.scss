@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .cardHeader {
@@ -31,7 +32,6 @@ h5 {
   margin-top: 9px;
 }
 .cardNumber {
-  color: var(--Very_Dark_Blue_Text);
   font-size: 3.5rem;
   font-weight: 700;
   margin-top: 30px;
@@ -52,10 +52,6 @@ h5 {
   border-radius: 5px;
 }
 .instagram {
-  /*
-  border-top: 4px solid;
-  border-image: var(--Instagram) 1;
-  */
   border-radius: 5px;
 }
 #linearBorder {
