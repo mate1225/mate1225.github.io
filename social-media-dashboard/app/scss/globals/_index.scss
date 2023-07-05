@@ -14,7 +14,6 @@ body {
 h3 {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--Dark_Grayish_Blue_Text);
   line-height: 17px;
 }
 p {
@@ -35,10 +34,4 @@ p {
     align-items: center;
     flex-direction: column;
   }
-} /*
-.cardBackgroundLight {
-  background: var(--Light_Grayish_Blue_Card-BG);
 }
-.cardBackgroundDark {
-  background: var(--Dark_Desaturated_Blue_Card-BG);
-}*/

@@ -103,3 +103,10 @@
 .cardBackground_Dark:hover {
   background: var(--hover_Dark);
 }
+/*text color*/
+.grayTextColor_Light {
+  color: var(--Dark_Grayish_Blue_Text);
+}
+.grayTextColor_Dark {
+  color: var(--Desaturated_Blue_Text);
+}

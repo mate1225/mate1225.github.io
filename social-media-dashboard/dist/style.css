@@ -99,7 +99,6 @@ body {
 h3 {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--Dark_Grayish_Blue_Text);
   line-height: 17px;
 }
 
@@ -124,13 +123,7 @@ p {
     align-items: center;
     flex-direction: column;
   }
-} /*
-.cardBackgroundLight {
-  background: var(--Light_Grayish_Blue_Card-BG);
 }
-.cardBackgroundDark {
-  background: var(--Dark_Desaturated_Blue_Card-BG);
-}*/
 header {
   padding-left: 25px;
   padding-right: 25px;
@@ -138,14 +131,6 @@ header {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   max-width: 1440px;
-}
-
-.headerColorLight {
-  background: #f7f9ff;
-}
-
-.headerColorDark {
-  background: hsl(230, 20%, 15%);
 }
 
 .mainTitle {
@@ -221,7 +206,6 @@ article {
 }
 
 h6 {
-  color: var(--Dark_Grayish_Blue_Text);
   font-size: 0.75rem;
   font-weight: 700;
   margin-left: 8px;
@@ -467,6 +451,15 @@ h5 {
 
 .cardBackground_Dark:hover {
   background: var(--hover_Dark);
+}
+
+/*text color*/
+.grayTextColor_Light {
+  color: var(--Dark_Grayish_Blue_Text);
+}
+
+.grayTextColor_Dark {
+  color: var(--Desaturated_Blue_Text);
 }
 
 main {
