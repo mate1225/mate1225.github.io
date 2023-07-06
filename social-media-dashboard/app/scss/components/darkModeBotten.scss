@@ -16,7 +16,7 @@
   display: inline-block;
   width: var(--button-width);
   height: var(--button-height);
-  background-color: var(--color-green);
+  background: var(--ToggleDark);
   border-radius: calc(var(--button-height) / 2);
   position: relative;
   transition: 0.3s all ease-in-out;
@@ -27,7 +27,7 @@
   display: inline-block;
   width: var(--toggle-diameter);
   height: var(--toggle-diameter);
-  background-color: #fff;
+  background: var(--Dark_Desaturated_Blue_Card-BG);
   border-radius: calc(var(--toggle-diameter) / 2);
   position: absolute;
   top: var(--button-toggle-offset);
@@ -38,7 +38,7 @@
 }
 
 .switch input[type="checkbox"]:checked + .slider {
-  background-color: var(--ToggleBright);
+  background: var(--ToggleBright);
 }
 
 .switch input[type="checkbox"]:checked + .slider::after {
@@ -49,6 +49,7 @@
   );
   box-shadow: calc(var(--toggle-shadow-offset) * -1) 0
     calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+  background: var(--White_Text);
 }
 
 .switch input[type="checkbox"] {
