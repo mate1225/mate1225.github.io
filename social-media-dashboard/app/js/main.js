@@ -22,6 +22,9 @@ const footerText = document.querySelectorAll(".footerText");
 /*state*/
 const theme = localStorage.getItem("theme");
 /*on mount*/
+if (localStorage.getItem("theme") === null) {
+  btn.checked = true;
+}
 if (theme) {
   btn.checked = false;
   //main theme
@@ -103,9 +106,16 @@ function footerToggle() {
     footerText[i].classList.toggle("textColor_Dark");
   }
 }
-
+function btnStateToggle() {
+  if (localStorage.getItem("theme")) {
+    localStorage.setItem("btn", "lightMode");
+  } else {
+    localStorage.removeItem("btn");
+  }
+}
 function handleThemeToggle() {
   document.body.classList.toggle("darkMode");
+  btnStateToggle();
   globalsToggle();
   headerToggle();
   mainToggle();
