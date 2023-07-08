@@ -23,6 +23,7 @@ const footerText = document.querySelectorAll(".footerText");
 const theme = localStorage.getItem("theme");
 /*on mount*/
 if (theme) {
+  btn.checked = false;
   //main theme
   document.body.classList.add(theme);
   //header
