@@ -27,13 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
+Dark Mode
 ![dark mode](images/Screenshot_dark.png)
+Light Mode
 ![light mode](images/Screenshot_light.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [](https://mate1225.github.io/social-media-dashboard/index.html)
+- Solution URL: [Fronted Mentor](https://your-solution-url.com)
+- Live Site URL: [github](https://mate1225.github.io/social-media-dashboard/index.html)
 
 ## My process
 
@@ -64,7 +66,7 @@ css toggel button styling.
 
 ### Useful resources
 
--[](https://www.youtube.com/playlist?list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP) this is a good video to watch if you get stuck while you buildig the site. I only watched the scss part , but it was realy helpful.
+-[youtube](https://www.youtube.com/playlist?list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP) this is a good video to watch if you get stuck while you buildig the site. I only watched the scss part , but it was realy helpful.
 
 ## Author
 
