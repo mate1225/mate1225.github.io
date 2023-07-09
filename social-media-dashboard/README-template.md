@@ -66,7 +66,7 @@ css toggel button styling.
 
 ### Useful resources
 
--[youtube](https://www.youtube.com/playlist?list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP) this is a good video to watch if you get stuck while you buildig the site. I only watched the scss part , but it was realy helpful.
+-[youtube](https://www.youtube.com/playlist?list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP) this is a good video to watch if you get stuck while you buildig the site. I only watched the scss part , but it was realy helpful. -[uiverse](https://uiverse.io/) I used this site to the button styling and then I have modified a bit .
 
 ## Author
 
