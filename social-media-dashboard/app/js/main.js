@@ -26,6 +26,7 @@ if (localStorage.getItem("theme") === null) {
   btn.checked = true;
 }
 if (theme) {
+  btn.checked = false;
   //main theme
   document.body.classList.add(theme);
   //header
