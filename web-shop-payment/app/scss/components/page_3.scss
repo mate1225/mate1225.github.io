@@ -1,0 +1,28 @@
+p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--input_text_color);
+}
+p > span {
+  color: var(--card_text_color);
+}
+.ShippingCompanys {
+  margin-top: 25px;
+}
+textarea {
+  resize: none;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+.deliveryDiv {
+  display: flex;
+  gap: 10px;
+}
+#dpdImage {
+  width: 55px;
+}

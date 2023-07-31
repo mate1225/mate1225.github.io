@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paymant</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/shopping-cart-logo.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Order Finalization</h1>
+      <nav>
+        <h2 id="navTitle">Progress</h2>
+        <div class="progressBar">
+          <!--line-->
+          <div class="progress" id="progress"></div>
+          <!--circles-->
+          <div class="progress_step active" data-title="Personal">1</div>
+          <div class="progress_step" data-title="delivery">2</div>
+          <div class="progress_step" data-title="shipping">3</div>
+          <div class="progress_step" data-title="summery">4</div>
+          <div class="progress_step" data-title="confirmation">5</div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <!--personal informations-->
+        <section class="cards">
+          <h2>Personal Informations</h2>
+          <div class="inputSections">
+            <label for="name">Name<span>*</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="inputSections">
+            <label for="e-mail">e-mail<span>*</span></label>
+            <input
+              type="email"
+              name="e-mail"
+              id="e_mail"
+              required
+              autocomplete="email"
+            />
+          </div>
+          <div class="inputSections">
+            <label for="tel">phone number<span>*</span></label>
+            <input type="tel" name="tel" id="tel" required autocomplete="tel" />
+          </div>
+          <div class="centering">
+            <button type="button" class="btn nextBtn">Next Page</button>
+          </div>
+        </section>
+        <!--delivery informations-->
+        <section class="cards hide">
+          <h2>Shipping information</h2>
+          <div class="inputSections">
+            <label for="postalCode">postal code<span>*</span></label>
+            <input
+              type="text"
+              name="postalCode"
+              id="postalCode"
+              required
+              autocomplete="postal-code"
+            />
+          </div>
+          <div class="inputSections">
+            <label for="city">city<span>*</span></label>
+            <input type="text" name="city" id="city" required />
+          </div>
+          <div class="inputSections">
+            <label for="street">street<span>*</span></label>
+            <input type="text" name="street" id="street" required />
+          </div>
+          <div class="inputSections">
+            <label for="doorNumber"
+              >Door Number <span id="optional">(optional)</span>
+            </label>
+            <input type="text" name="doorNumber" id="doorNumber" />
+          </div>
+          <div class="btnGrupe">
+            <button type="button" class="btn nextBtn">Next Page</button>
+            <button type="button" class="btn previousBtn">Previous Page</button>
+          </div>
+        </section>
+        <!--siping informations-->
+        <section class="cards hide">
+          <h2>Shipping company</h2>
+          <article class="ShippingCompanys centering">
+            <!--gls-->
+            <section class="deliveryGrupe centering">
+              <div class="radioBtnsGrupe">
+                <div class="deliveryDiv">
+                  <label for="gls">GLS</label>
+                  <img src="images/gls.png" alt="gls" />
+                </div>
+                <input
+                  type="radio"
+                  id="gls"
+                  name="delivery"
+                  value="gls"
+                  required
+                />
+              </div>
+              <div class="centering">
+                <p class="price">
+                  price: <br />
+                  <span> 5.46 EUR</span>
+                </p>
+                <p class="devilveryTime">
+                  delivery time: <br />
+                  <span>1-2 days</span>
+                </p>
+              </div>
+            </section>
+            <!--MPL-->
+            <section class="deliveryGrupe centering">
+              <div class="radioBtnsGrupe">
+                <div class="deliveryDiv">
+                  <label for="mpl">MPL</label>
+                  <img src="images/mpl.jpg" alt="mpl" />
+                </div>
+
+                <input type="radio" id="mpl" name="delivery" value="mpl" />
+              </div>
+              <div class="centering">
+                <p class="price">
+                  price: <br />
+                  <span> 4.16 EUR</span>
+                </p>
+                <p class="devilveryTime">
+                  delivery time: <br />
+                  <span>1-2 days</span>
+                </p>
+              </div>
+            </section>
+            <!--DPD-->
+            <section class="deliveryGrupe centering">
+              <div class="radioBtnsGrupe">
+                <div class="deliveryDiv">
+                  <label for="dpd">DPD</label>
+                  <img src="images/dpd.jpg" alt="dpd" id="dpdImage" />
+                </div>
+                <input type="radio" id="dpd" name="delivery" value="dpd" />
+              </div>
+              <div class="centering">
+                <p class="price">
+                  price: <br />
+                  <span> 6.24 EUR</span>
+                </p>
+                <p class="devilveryTime">
+                  delivery time: <br />
+                  <span>1 days</span>
+                </p>
+              </div>
+            </section>
+          </article>
+          <div class="gridContainer">
+            <label>notes for the Courier:</label>
+            <textarea name="notes" id="notes" rows="5"></textarea>
+          </div>
+          <div class="btnGrupe">
+            <button type="button" class="btn nextBtn">Next Page</button>
+            <button type="button" class="btn previousBtn">Previous Page</button>
+          </div>
+        </section>
+        <!--order summery-->
+        <section class="cards hide">
+          <h2>Order Summery</h2>
+          <section class="summeryGrupe">
+            <h3>Personal informations</h3>
+            <p>name: <span id="summeryName"></span></p>
+            <p>addres: <span id="summeryAddres"></span></p>
+            <p>e-mail: <span id="summeryE_mail"></span></p>
+            <p>tel: <span id="summeryTel"></span></p>
+          </section>
+          <section class="summeryGrupe">
+            <h3>Shipping company</h3>
+
+            <p>Name: <span id="summeryShipingName"></span></p>
+            <p>price: <span id="summeryShipingPrice"></span></p>
+            <p>Delivery time: <span id="summeryDeliveryTime"></span></p>
+          </section>
+          <section class="summeryGrupe">
+            <h3>Prices</h3>
+            <!--this price will be a fixed value becose this is just a practice project-->
+            <p>product price: <span>50 euro</span></p>
+
+            <p>Shipping Cost: <span id="summeryShippingCost"></span></p>
+            <p>total: <span id="summeryTotal"> </span></p>
+          </section>
+          <div class="btnGrupe">
+            <button type="submit" class="btn nextBtn">Order</button>
+            <button type="button" class="previousBtnStyle previousBtn">
+              Previous Page
+            </button>
+          </div>
+        </section>
+        <!--order confirmation-->
+        <section class="cards hide">
+          <div class="orderConfirmation">
+            <h2>Order confirmation</h2>
+            <!--this order number is also  will a fiex  value becose this  is a practice project only -->
+            <p id="botomText">your order number is : <span>#12435432</span></p>
+            <p id="tyText">Thank You for your purchase !</p>
+            <span class="material-symbols-outlined" id="heartIcon">
+              favorite
+            </span>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <script src="dist/main.js"></script>
+  </body>
+</html>
