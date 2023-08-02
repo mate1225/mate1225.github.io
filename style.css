@@ -104,33 +104,16 @@ a:hover {
   width: 20rem;
   height: 5rem;
 }
-/*
-#item1 {
-  grid-column: 1/2;
-  padding: 1rem 3rem 1rem 3rem;
+#personalTitle {
+  text-align: center;
+  /* border-bottom: 3px solid gray; */
 }
-#item2 {
-  padding: 1rem 4.5rem 1rem 4.5rem;
+.personalDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#item3 {
-  padding: 1rem 3rem 1rem 3rem;
-}
-#item4 {
-  padding: 1rem 3.5rem 1rem 3.5rem;
-}
-#item5 {
-  padding: 1rem 4.5rem 1rem 4.5rem;
-}
-#item6 {
-  padding: 1rem 4.5rem 1rem 4.5rem;
-}
-#item7 {
-  padding: 1rem 3.5rem 1rem 3.5rem;
-}
-#item8 {
-  padding: 1rem 4rem 1rem 4rem;
-}
-*/
 /*mediaquaries*/
 @media (max-width: 670px) {
   .centering {
