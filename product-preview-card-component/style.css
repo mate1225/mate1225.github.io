@@ -1,0 +1,244 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/*custom css code*/
+
+/*font-family: "Fraunces", serif;
+font-family: "Montserrat", sans-serif;*/
+
+:root {
+  /*Primary*/
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* Neutral*/
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  /*hover*/
+  --Deap_Aquamrine: #1a4032;
+}
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+
+  background-color: var(--Cream);
+
+  /*centering*/
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  margin: 1rem;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*main*/
+
+.mainDiv {
+  background-color: var(--White);
+
+  border-radius: 0.625rem;
+  /*
+  padding: 0px 0px 1.5px 0px;
+  */
+  overflow: hidden;
+
+  max-width: 600px;
+}
+.productContent {
+  padding: 1.5rem;
+
+  display: grid;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--Dark_grayish_blue);
+  /*
+  margin: 24px 0px 12px 24px;
+  */
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Very_dark_blue);
+
+  margin-top: 0.75rem;
+}
+p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--Dark_grayish_blue);
+
+  margin-top: 1rem;
+}
+
+#priceDiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  column-gap: 1.188rem;
+
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Dark_cyan);
+}
+h4 {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--Dark_grayish_blue);
+
+  text-decoration: line-through;
+}
+#btn {
+  background: var(--Dark_cyan);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--White);
+
+  border-radius: 0.5rem;
+  border: none;
+
+  cursor: pointer;
+
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  margin-top: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+#btn:hover {
+  background: var(--Deap_Aquamrine);
+}
+/*footer*/
+.attribution {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 32px;
+
+  margin-bottom: 16px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: var(--Dark_cyan);
+}
+@media screen and (min-width: 630px) {
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .productContent {
+    padding: 2rem;
+  }
+  h1 {
+    margin-top: 1.25rem;
+  }
+  p {
+    margin-top: 1.5rem;
+  }
+  .priceDiv {
+    margin-top: 1.813rem;
+  }
+  #btn {
+    margin-top: 1.875rem;
+  }
+}
